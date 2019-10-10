@@ -1,0 +1,59 @@
+html {
+	overflow-x: hidden !important;
+	overflow-y: hidden !important;
+	background-color: transparent !important;
+}
+
+body {
+	background-color: transparent !important;
+}
+
+#notifications {
+	top: 3%;
+	left: 65%;
+	color: rgba(255,255,255,0.7);
+	max-width: 550px;
+	font-size: 12px;
+	position: absolute !important;
+	font-family: Arial,Helvetica,sans-serif;
+}
+
+#notifications b {
+	color: rgba(255,255,255,1);
+}
+
+#sucesso {
+	background: url("1.png") 10px no-repeat;
+	float: left;
+	padding: 7px 10px 7px 30px;
+	border-radius: 4px;
+ 	margin: 0 0 10px 10px;
+	background-color: rgba(69,127,0,0.8);
+}
+
+#negado {
+	background: url("2.png") 10px no-repeat;
+	float: left;
+	padding: 7px 10px 7px 30px;
+	border-radius: 4px;
+ 	margin: 0 0 10px 10px;
+	background-color: rgba(200,50,50,0.8);
+}
+
+#aviso {
+	background: url("3.png") 10px 5px no-repeat;
+	float: left;
+	padding: 7px 10px 7px 31px;
+	border-radius: 4px;
+ 	margin: 0 0 10px 10px;
+	background-color: rgba(205,164,0,0.8);
+}
+
+#importante {
+	background: url("4.png") 10px no-repeat;
+	float: left;
+	padding: 7px 10px 7px 32px;
+	border-radius: 4px;
+ 	margin: 0 0 10px 10px;
+	background-color: rgba(0,121,205,0.8);
+}

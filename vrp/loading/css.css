@@ -1,0 +1,27 @@
+body,td,th { background: #161922; background-image: url("background.jpg"); background-repeat: no-repeat; background-attachment: fixed; background-position: center; font-size: 11px; font-family: arial; color: #666; cursor:default; vertical-align:baseline; outline:0; line-height:1; margin:0; padding:0; word-wrap: break-word; }
+a,a:link,a:visited,a:active,a:hover { font-family: arial; font-size:11px; color:#666; text-decoration:none; }
+div,span,applet,object,iframe,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr { border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent; margin:0; padding:0; }
+::-webkit-scrollbar { width: 0; }
+
+#align {
+	width: 900px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	transform: translate(-50%,-50%);
+}
+
+.bar {
+	width: 900px;
+	height: 30px;
+	border: 1px solid #ff3c38;
+	border-radius: 50px;
+	background-image: repeating-linear-gradient(-45deg,#fe6360,#fe6360 11px,#ff3c38 10px,#ff3c38 20px);
+	background-size: 28px 28px;
+	animation: move .5s linear infinite;
+}
+
+@keyframes move {
+	0% { background-position: 0 0; }
+	100% { background-position: 28px 0; }
+}

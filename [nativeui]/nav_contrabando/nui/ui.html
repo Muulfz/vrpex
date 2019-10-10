@@ -1,0 +1,76 @@
+<html>
+	<head>
+		<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+		<link href="ui.css" rel="stylesheet" type="text/css"/>
+	</head>
+	<body>
+		<div id="actionmenu">
+			<div id="mainmenu">
+				<button class="menuoption" data-sub="armamentos">Armamentos</button>
+				<button class="menuoption" data-sub="municoes">Munições</button>
+				<button class="menuoption" data-sub="utilidades">Utilidades</button>
+				<button class="menuoption" data-action="fechar">Fechar</button>
+			</div>
+
+			<div data-parent="mainmenu" id="armamentos" style="display: none;">
+				<button class="menuoption" data-sub="armamentos-comprar">Comprar</button>
+				<button class="menuoption" data-sub="armamentos-vender">Vender</button>
+			</div>
+			<div data-parent="armamentos" id="armamentos-comprar" style="display: none;">
+				<button class="menuoption" data-action="armamentos-comprar-hkp7m10"><l>HK P7M10</l><r>$30.000</r></button>
+				<button class="menuoption" data-action="armamentos-comprar-uzi"><l>Uzi</l><r>$200.000</r></button>
+				<button class="menuoption" data-action="armamentos-comprar-mtar21"><l>MTAR-21</l><r>$120.000</r></button>
+				<button class="menuoption" data-action="armamentos-comprar-ak103"><l>AK-103</l><r>$210.000</r></button>
+				<button class="menuoption" data-action="armamentos-comprar-magnum44"><l>Magnum 44</l><r>$100.000</r></button>
+				<button class="menuoption" data-action="armamentos-comprar-thompson"><l>Thompson</l><r>$150.000</r></button>
+			</div>
+			<div data-parent="armamentos" id="armamentos-vender" style="display: none;">
+				<button class="menuoption" data-action="armamentos-vender-hkp7m10"><l>HK P7M10</l><r>$15.000</r></button>
+				<button class="menuoption" data-action="armamentos-vender-uzi"><l>Uzi</l><r>$100.000</r></button>
+				<button class="menuoption" data-action="armamentos-vender-mtar21"><l>MTAR-21</l><r>$60.000</r></button>
+				<button class="menuoption" data-action="armamentos-vender-ak103"><l>AK-103</l><r>$105.000</r></button>
+				<button class="menuoption" data-action="armamentos-vender-magnum44"><l>Magnum 44</l><r>$50.000</r></button>
+				<button class="menuoption" data-action="armamentos-vender-thompson"><l>Thompson</l><r>$75.000</r></button>
+			</div>
+
+			<div data-parent="mainmenu" id="municoes" style="display: none;">
+				<button class="menuoption" data-sub="municoes-comprar">Comprar</button>
+				<button class="menuoption" data-sub="municoes-vender">Vender</button>
+			</div>
+			<div data-parent="municoes" id="municoes-comprar" style="display: none;">
+				<button class="menuoption" data-action="municoes-comprar-hkp7m10"><l>HK P7M10</l><r>$1.000</r></button>
+				<button class="menuoption" data-action="municoes-comprar-uzi"><l>Uzi</l><r>$1.000</r></button>
+				<button class="menuoption" data-action="municoes-comprar-ak103"><l>AK-103</l><r>$1.200</r></button>
+				<button class="menuoption" data-action="municoes-comprar-magnum44"><l>Magnum 44</l><r>$1.200</r></button>
+				<button class="menuoption" data-action="municoes-comprar-thompson"><l>Thompson</l><r>$1.200</r></button>
+			</div>
+			<div data-parent="municoes" id="municoes-vender" style="display: none;">
+				<button class="menuoption" data-action="municoes-vender-hkp7m10"><l>HK P7M10</l><r>$500</r></button>
+				<button class="menuoption" data-action="municoes-vender-uzi"><l>Uzi</l><r>$500</r></button>
+				<button class="menuoption" data-action="municoes-vender-ak103"><l>AK-103</l><r>$600</r></button>
+				<button class="menuoption" data-action="municoes-vender-magnum44"><l>Magnum 44</l><r>$600</r></button>
+				<button class="menuoption" data-action="municoes-vender-thompson"><l>Thompson</l><r>$600</r></button>
+			</div>
+
+			<div data-parent="mainmenu" id="utilidades" style="display: none;">
+				<button class="menuoption" data-sub="utilidades-comprar">Comprar</button>
+				<button class="menuoption" data-sub="utilidades-vender">Vender</button>
+			</div>
+			<div data-parent="utilidades" id="utilidades-comprar" style="display: none;">
+				<button class="menuoption" data-action="utilidades-comprar-algemas"><l>Algemas</l><r>$20.000</r></button>
+				<button class="menuoption" data-action="utilidades-comprar-capuz"><l>Capuz</l><r>$20.000</r></button>
+				<button class="menuoption" data-action="utilidades-comprar-lockpick"><l>Lockpick</l><r>$10.000</r></button>
+				<button class="menuoption" data-action="utilidades-comprar-masterpick"><l>Masterpick</l><r>$50.000</r></button>
+				<button class="menuoption" data-action="utilidades-comprar-pendrive"><l>Pendrive</l><r>$35.000</r></button>
+			</div>
+			<div data-parent="utilidades" id="utilidades-vender" style="display: none;">
+				<button class="menuoption" data-action="utilidades-vender-algemas"><l>Algemas</l><r>$10.000</r></button>
+				<button class="menuoption" data-action="utilidades-vender-capuz"><l>Capuz</l><r>$10.000</r></button>
+				<button class="menuoption" data-action="utilidades-vender-lockpick"><l>Lockpick</l><r>$5.000</r></button>
+				<button class="menuoption" data-action="utilidades-vender-masterpick"><l>Masterpick</l><r>$25.000</r></button>
+				<button class="menuoption" data-action="utilidades-vender-pendrive"><l>Pendrive</l><r>$17.500</r></button>
+			</div>
+		</div>
+		<script src="ui.js" type="text/javascript"></script>
+	</body>
+</html>
